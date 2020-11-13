@@ -1,0 +1,16 @@
+name = "SyntheticDatasetsDashboard"
+uuid = "537412ba-5135-41fe-9d13-ea2f7d47b680"
+authors = ["Nicolas Magalhães", "Filipe Braida"]
+version = "0.1.0"
+
+[deps]
+Dash = "1b08a953-4be3-4667-9a23-3db579824955"
+DashCoreComponents = "1b08a953-4be3-4667-9a23-9da06441d987"
+DashHtmlComponents = "1b08a953-4be3-4667-9a23-24100242a84a"
+DashTable = "1b08a953-4be3-4667-9a23-f0e2ba4deb9a"
+Plots = "91a5bcdd-55d7-5caf-9e0b-520d859cae80"
+StatsPlots = "f3b207a7-027a-5e70-b257-86293d7955fd"
+SyntheticDatasets = "07315a1d-27cb-4d26-84cb-b2a39a2725fb"
+
+[compat]
+julia = "1"
