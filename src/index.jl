@@ -1,6 +1,8 @@
 dropdown_options = [
     Dict("label" => "Blobs", "value" => "make_blobs"),
     Dict("label" => "Gaussian Quantiles", "value" => "make_gaussian_quantiles"),
+    Dict("label" => "Moons", "value" => "make_moons"),
+    Dict("label" => "Two Spirals", "value" => "make_twospirals"),
 ]
 
 app.layout = html_div() do
