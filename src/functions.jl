@@ -7,6 +7,8 @@ function dropload(value)
         return moons
     elseif value == "make_twospirals"
         return spirals
+    elseif value == "make_circles"
+        return circles
     end
 end
 
@@ -45,5 +47,13 @@ function gen_two_spirals(n_samples, noise, start_degrees, total_degrees)
                                                     start_degrees = start_degrees,
                                                     total_degrees = total_degrees);
     p = @df spirals scatter(:feature_1, :feature_2, group = :label)
+    (data = Plots.plotly_series(p), layout = Plots.plotly_layout(p))
+end
+
+function gen_circles(n_samples, noise, factor)
+    circles = SyntheticDatasets.make_circles(   n_samples = n_samples,
+                                                noise = Float64(noise),
+                                                factor = Float64(factor));
+    p = @df circles scatter(:feature_1, :feature_2, group = :label)
     (data = Plots.plotly_series(p), layout = Plots.plotly_layout(p))
 end
