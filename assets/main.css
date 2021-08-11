@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    color: black;
+    background: #ebf2f5;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body, input, button, textarea {
+    font: 400 1.8rem/1 'Nunito', sans-serif;
+}
+
+#page-index {
+    background: #fff;
+
+    font-family: Poppins,sans-serif;
+    font-size: .9rem;
+    font-weight: 400;
+    line-height: 1.6;
+
+    text-align: center;
+    min-height: 100vh;
+
+    display: flex;
+}
+
+#container {
+    margin: auto;
+    width: min(90%, 112rem);
+    margin-bottom: 5rem;
+}
+
+#header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+#header #logo {
+    height: 50px;
+    display: inline-block;
+    /* padding-left: 2.5rem; */
+    padding-top: .80rem;
+    padding-bottom: .80rem;
+    padding-right: 1rem;
+    font-size: 1.125rem;
+    line-height: inherit;
+    white-space: nowrap;
+}
+
+#header h2 {
+    color: #6c757d;
+    font-size: 2.2rem;
+    font-weight: 550;
+}
+
+#header a {
+    text-decoration: none;
+}
+
+#header a:hover{
+    text-decoration: underline #0e2b5f;
+}
+
+hr{
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,.1);
+}
+
+
+#main {
+    margin: auto;
+    width: 80%;
+    box-shadow: 0 .6rem 1.1rem rgba(0,0,0,.15);
+    border-radius: .4rem;
+    padding: 1.7rem;
+}
+
+#main h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    padding: 2rem 0;
+}
+
+#main #drop {
+    margin: auto;
+    width: 80%;
+    font-size: 2rem;
+    border-radius: 0.25rem;
+    margin-bottom: 1.5rem;
+    padding: 0;
+}
+
+#main #fields{
+    padding: 2rem;
+}
+
+#main label {
+    font-size: 2rem;
+    padding-bottom: 2rem;
+
+}
+
+.container-slider {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+.slider {
+    padding-top: 1rem;
+}
+
+.container-graph {
+    display: flex;
+    justify-content: center;
+}
+
+.dash-graph {
+    overflow: hidden;
+}
+
+#footer p {
+    font-size: 1.5rem;
+    color: #0e2b5f;
+}
+
+#footer a {
+    text-decoration: none;
+}
+
+#footer a:hover {
+    text-decoration: underline #0e2b5f;
+}

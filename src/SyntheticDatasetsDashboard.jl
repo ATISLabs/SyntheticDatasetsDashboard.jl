@@ -5,8 +5,27 @@ using DashHtmlComponents
 using SyntheticDatasets
 using StatsPlots
 
-app = dash( suppress_callback_exceptions = true, 
-            external_stylesheets = ["https://codepen.io/chriddyp/pen/bWLwgP.css"]);
+app = dash( suppress_callback_exceptions = true );
+
+app.title = "Synthetic Datasets Dashboard";
+
+app.index_string = """<!DOCTYPE html>
+<html>
+    <head>
+        {%metas%}
+        <title>{%title%}</title>
+        {%css%}
+    </head>
+    <body>
+        <div id="tested"></div>
+        {%app_entry%}
+        <footer>
+            {%config%}
+            {%scripts%}
+            {%renderer%}
+        </footer>
+    </body>
+</html>"""
 
 include("functions.jl")
 include("index.jl")
